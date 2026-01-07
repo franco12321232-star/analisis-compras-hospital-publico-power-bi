@@ -5,5 +5,5 @@ Se realiza un Analisis en power bi derivado de proyecto analisis de hospital pub
 
 
 -- PODRIA SEPARAR LOS ANALISIS POR SECCIONES SEGUN MIS PANELES, POR LO QUE VOY A CREAR CATEGORIAS Y VOY A EMPEZAR A COMPARAR Y VER PATRONES, ME INTERESAN VARIAS COMPARATIVAS ENTRE ORDENES TOTALES EN EL AÑO, JUNTO CON PATRONES DE COMPRAS DE STOCK CRITICO EN EL AÑO, COMPRAS ALTERNATIVAS Y FALTA CENABAST, ESO PUEDE REVELAR SI ES QUE LO ESCLAREZCO BIEN, SI HAY UN PATRON EN LA REALIZACION DE LAS ORDENES DE COMPRA JUNTO CON LA DEMANDA Y FALTA DE STOCK, PUEDO JUSTIFICAR SI EL CUMULO DE ESTAS CATEGORIAS AFECTA DE GRAN MEDIDA A LAS ORDENES ANUALES
-
+Recalcar que las unidades que estan ahi algunas son ampollas y otras son clasificadas como unidad y se cambiaron por ser mismo producto, tambien que se creo una columna de clasificacion de ordenes y se creo una de tipo de orden para identificar todas las de compra agil
 
