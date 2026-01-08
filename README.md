@@ -2,6 +2,9 @@
 ## Introduccion
 Se realiza un Analisis en power bi derivado de proyecto analisis de hospital publico, el cual previamente se extrajo de datasets de mercado publico por medio de Rstudio, se limpio y se crearon mediciones en google sheets y tableau. Este proyecto continua con una limpieza mas exaustiva de datos junto con normalizacion de datos y creacion de un modelo de datos que ayuda a crear visualizaciones, formar relaciones y crear tablas que organizen de fomra clara los datos, ademas de preparar el dataset para futuros analisis al incluir codigos de tipo de compra, con la intencion de escalarlo a licitaciones publicas u otros segun necesidad.
 
+ALCANCE
+Se utiliza un dataset parcialmente limpio que contiene observaciones de 2 años(2024-2025) de actos de ordenes de compra por parte del hospital Dr.Lautaro Navarro.
+Es imposible estimar tiempo de recepcion de los medicamentos, en las descripciones solo se comentan estimados, no sale una fecha acerca de ello, solo existen fechas de elaboracion de ordenes de compra y fechas de elaboracion de cotizaciones; tambien se despreciara las cotizaciones y solo se consideraran datos del acto de orden de compra.
 
 ## Limpieza y normalizacion de datos 
 Se crea una clasificacion por palabras clave(FARMACIA AMBULATORIA, FALTA CENABAST, FARMACIA DOSIS UNITARIA, COMITÉ FARMACIA, NO CLASIFICADO, ETC), para explorar en detalle como se elaboro el codigo consultar **codigo clasifiacion area.txt**
@@ -52,21 +55,31 @@ En general se puede deducir que existe un crecimiento del gasto en las areas de 
 Cabe recalcar que cenabast tiene un aumento fuerte del 200%(YoY), ademas de aumentar su % de participacion en el gasto total de un 4,40% a un 13,22%, siendo el aumento de un 8,82%.
 Farmacia ambulatoria tiene un aumento del 74% (YoY) y un aumento en % de participacion en el gasto total de 11,32% a 19,77%, el aumento es de 8,5%
 
-<img width="1006" height="256" alt="image" src="https://github.com/user-attachments/assets/e1fdf930-9d82-4c14-a57c-77afbdc456fc" />
+<img width="1326" height="330" alt="image" src="https://github.com/user-attachments/assets/8296e874-6095-4d5b-ae41-ea13b5854e32" />
+
+Se busca la orden con mayor gasto con impuesto en farmacia ambulatoria:
+<img width="685" height="447" alt="image" src="https://github.com/user-attachments/assets/e5473b22-1d1c-4531-9f00-38ef373ac7e5" />
+
+Al buscar en la tabla con drilldown, aparecen todas las instancias de venta del mismo producto:
+
+<img width="1255" height="210" alt="image" src="https://github.com/user-attachments/assets/f318d34c-9412-4c1a-b04e-b27547d1cbd8" />
 
 
-Al buscar en la tabla, aparecen todas las instancias de venta del mismo producto
-<img width="1697" height="425" alt="image" src="https://github.com/user-attachments/assets/f2a4f932-27c4-4e5d-87f9-d7547e1b89eb" />
+Se realiza una metrica donde se busca las ordenes con mayor cantidad de productos que se adquieren, usando como condicion que sean arriba de 5000 unidades y que pertenezcan a farmacia ambulatoria, se debe dejar claro que las formas farmaceuticas no se definen y solo se considera la adquisicion de la unidad en si.
+
+<img width="752" height="440" alt="image" src="https://github.com/user-attachments/assets/df606596-42ce-4fb0-aa1c-6125122dbd7b" />
 
 
 
 
 
-Seegun lo comprendido del analisis, farmacia ambulatoria posee bastante prevalencia al juntarse las ordenes de estos 2 años y comparar la cantidad de ordenes con las otras areas, siendo frecuentemente el area con mas ordenes. Al observar esta frecuencia, llama la atencion que abril, junio, julio y septiembre juntan una gran cantidad de ordenes. Por lo que se puede suponer problemas de stock frecuente en estos periodos.
+
+
+Segun lo comprendido del analisis, farmacia ambulatoria es bastante prevalente en lo que respecta a la frecuencia de ordenes de compra, al observar los datos de estos 2 años y comparar la cantidad de ordenes con las otras areas, se comprueba que es el area que tiene mas ordenes en total, llegando a 70. Al observar esta frecuencia, llama la atencion que abril, junio, julio y septiembre juntan una gran cantidad de ordenes. Por lo que se puede suponer problemas de stock frecuente en estos periodos.
 
 <img width="1447" height="336" alt="image" src="https://github.com/user-attachments/assets/f207c1fc-1427-43f2-a61a-6a7ac032107e" />
 
-Segun la cantidad de ordenes realizadas en el periodo 2024-2025, se observa que el año 2025 el mes con la mayor cantidad de ordenes realizadas en el hospital es abril, liderando con 21 ordenes, 8 de las cuales son de farmacia ambulatoria y 7 provenientes de FALTA CENABAST, se nota que coincidentemente tambien es el mes con el gasto mas alto en medicamentos de estos 2 años, con $19.708.868.
+Segun la cantidad de ordenes realizadas en el periodo 2024-2025, se identifica el mes con la mayor cantidad de ordenes realizadas en el hospital de todo el periodo, siendo abril del 2025 liderando con 21 ordenes, 8 de las cuales son de farmacia ambulatoria y 7 provenientes de FALTA CENABAST, se nota que coincidentemente tambien es el mes con el gasto mas alto en medicamentos de estos 2 años, con $19.708.868.
 ### COMPARATIVA 2024-2025
 Es importante entender que el aumento en las metricas de ordenes de farmacia y FALTA CENABAST incrementaron el año 2025, el mas notorio es FARMACIA AMBULATORIA con 27 ordenes el año 2024 a 43 ordenes el 2025, siendo un aumento del 59,2%(YoY).
 
@@ -131,5 +144,5 @@ El mes con mas gasto en FALTA CENABAST es en agosto y el que tiene mas ordenes e
 
 ## CONCLUSION
 
-Se desprende de esto que el 2025 se incurrio
+Se desprende de esto que el 2025 se incurrio en gastos mayores en areas como FARMACIA AMBULATORIA, CENABAST y COMPRA ALTERNATIVA, mostrando aumentos en la cantidad de ordenes realizadas como en montos gastados de manera proporcional de forma general, demostrando una mayor dependencia de las compras agiles para suplir envios faltantes a farmacia, se hace notar que los periodos donde mas ordenes concentradas de farmacia ambulatoria, existen son a mitades de año, e incluso el aumento de ordenes de forma anormal por parte de COMPRA ALTERNATIVA FALTA CENABAST el mes de agosto 2024 puede traducirse en quiebres fuertes que podria ser importante explorar por presencia de de otros periodos donde se repita el mismo patron, ademas de ahondar en proveedores que usualmente participan en suplir al hospital en caso de quiebres, con el proposito de reducir dependencia de un proveedor. Existe una presencia alta de ordenes CENABAST que mayormente se encuentran en abril, junio y agosto   lo que puede significar problemas en lo que respecta a prevision frente a la disponibilidad y rapidez de respuesta de parte de CENABAST en esos meses, por lo que puede ser que posiblemente existan problemas de logistica relacionados con CENABAST, y seria una opcion investigar con datasets de CENABAST para diagnosticar problemas en distribucion y tiempo de demora.
 
