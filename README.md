@@ -50,26 +50,34 @@ En total, FALTA CENABAST acumula 21 ordenes totales con esta caracteristica, seg
 <img width="1116" height="623" alt="image" src="https://github.com/user-attachments/assets/221108cd-c6a0-4223-9cf2-df6d115f3cf0" />
 
 ### COMPARATIVA 2024-2025
-Hay algo crucial que destacar, y es que el gasto de compra alternativa es bajo ($9.909.880)comparado con el año siguiente, que asciende a $23.210.177, lo cual indica un crecimiento de 134% a partir del valor original
+Hay algo crucial que destacar, y es que el gasto de compra alternativa es bajo ($9.909.880)comparado con el año siguiente, que asciende a $23.210.177, lo cual indica un crecimiento de 134% a partir del valor original. 
+El analisis realizado indica una variedad de precios de ordenes mucho mayores dentro de FALTA CENABAST en el 2025 con un promedio de $1.110.390 a comparacion de farmacia ambulatoria con $828.473
 
 <img width="929" height="503" alt="image" src="https://github.com/user-attachments/assets/a5a895a4-3001-4641-bcc9-a5d807d491ed" />
-
 <img width="918" height="507" alt="image" src="https://github.com/user-attachments/assets/3c7d7f29-a94b-4db8-83d0-71eff27a546e" />
 
 En 2024 la mayor participacion en ordenes es por FALTA CENABAST con 13 ordenes y un gasto total de $4.420.553, siguiendo farmacia ambulatoria con 9 ordenes y $3.605.081. Estas areas equivalen al 80,9% del valor total de compra alternativa.
-Pasando al 2025 ocurre un cambio en el area con mas ordenes, dominando farmacia ambulatoria con 11 ordenes y un gasto de $10.483.591 es de destacar que el aumento del gasto del año pasado al 2025 es de 190%; y cambiando con FALTA CENABAST con 8 ordenes y un gasto de $8.883.124, significando un aumento del 100%. Segun el porcentaje que equivalen estas 2 areas en el total de compra alternativa, tienen una proporcion de 83,4%, significando que la proporcion que contribuye al valor aumento en un 2,5%.
+Pasando al 2025 ocurre un cambio en el area con mas ordenes, dominando farmacia ambulatoria con 11 ordenes y un gasto de $10.483.591 es de destacar que el aumento del gasto del año pasado al 2025 es de 190%; y cambiando con FALTA CENABAST con 8 ordenes y un gasto de $8.883.124, significando un aumento del 100%. Segun el porcentaje que equivalen estas 2 areas en el total de compra alternativa, tienen una proporcion de 83,4%, significando que la proporcion que contribuye al valor aumentó en un 2,5%.
 
 El mes con mayor costo del 2024, coincidentemente es el de mayor orden, el cual es agosto, la orden de mayor gasto en agosto es COMPRA ALTERNATIVA FALTA CENABAST JULIO / ATORVASTATINA 40 MG CM	con $664,734.
 
 <img width="939" height="500" alt="image" src="https://github.com/user-attachments/assets/7356d8be-ec2b-431e-b0a2-6e3375cbc529" />
+<img width="473" height="312" alt="image" src="https://github.com/user-attachments/assets/b9fe41c5-141e-49b9-b464-716174ee127b" />
 
 Farmacia ambulatoria tiene su mes de mayor costo en mayo, pero el mes con mas ordenes es en noviembre y su orden de mayor gasto es COMPRA ALTERNATIVA FARMACIA AMBULATORIA JULIO / TIAMINA CLORHIDRATO 10 MG CM	$1,042,440
-
-<img width="1124" height="631" alt="image" src="https://github.com/user-attachments/assets/281f6875-57cf-4da6-a38e-eae1f54933ac" />
+<img width="1189" height="625" alt="image" src="https://github.com/user-attachments/assets/b8264dd4-71a2-4434-867b-dc6cb9726efb" />
+<img width="463" height="187" alt="image" src="https://github.com/user-attachments/assets/26d7ae7a-33f7-484e-839c-9780d77ede09" />
 
 En el año 2025, farmacia ambulatoria tiene su mes de mas alta frecuencia en abril y julio, ambos con 2 ordenes al mes pero ocurriendo la mayor cantidad de gasto en julio, la orden de mayor gasto es COMPRA ALTERNATIVA FALTA CENABAST FARMACIA AMBULATORIA JUNIO / LEVETIRACETAM 1000 MG CM con	$2,145,641
 
+<img width="1130" height="633" alt="image" src="https://github.com/user-attachments/assets/73afd23a-29a6-4b1e-82b4-d663720c6767" />
 <img width="474" height="178" alt="image" src="https://github.com/user-attachments/assets/72ea7698-db02-4989-86d6-751f2d0a5ba0" />
+
+El mes con mas gasto en FALTA CENABAST es en agosto y el que tiene mas ordenes es en abril. La orden de mayor coste es COMPRA ALTERNATIVA FALTA CENABAST MAYO Y JUNIO / LACTULOSA 65-66 1000 ML	$3,448,620	$3,448,620
+
+<img width="1157" height="640" alt="image" src="https://github.com/user-attachments/assets/1430ee10-34e6-461b-8943-c18a132cea2a" />
+
+<img width="586" height="191" alt="image" src="https://github.com/user-attachments/assets/ab0f7196-b516-4edb-ab66-9d3c9964188c" />
 
 
 
