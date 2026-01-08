@@ -48,20 +48,27 @@ Aclarar que compra alternativa no es categoria sino condicion y que tambien exis
 ## Farmacia Ambulatoria
 
 ### Vista general de los datos
-En general se puede deducir que existe un crecimiento del gasto en las areas de FARMACIA AMBULATORIA y FALTA CENABAST, con variaciones de gasto comparada con el año pasado bastante notorias y un aumento en el porcentaje de participacion en el gasto total, ambos juntos representando al 48,72% del gasto total de estos 2 años.
+En general se puede deducir que existe un crecimiento del gasto en las areas de FARMACIA AMBULATORIA y FALTA CENABAST, con variaciones de gasto comparada con el año pasado bastante notorias y un aumento en el % de participacion en el gasto total, ambos juntos representando al 48,72% del gasto total de estos 2 años.
+Cabe recalcar que cenabast tiene un aumento fuerte del 200%(YoY), ademas de aumentar su % de participacion en el gasto total de un 4,40% a un 13,22%, siendo el aumento de un 8,82%.
+Farmacia ambulatoria tiene un aumento del 74% (YoY) y un aumento en % de participacion en el gasto total de 11,32% a 19,77%, el aumento es de 8,5%
 
-<img width="1314" height="336" alt="image" src="https://github.com/user-attachments/assets/ea29c950-b341-490c-ba0c-f123293ad2f6" />
+<img width="1006" height="256" alt="image" src="https://github.com/user-attachments/assets/e1fdf930-9d82-4c14-a57c-77afbdc456fc" />
+
+
+Al buscar en la tabla, aparecen todas las instancias de venta del mismo producto
+<img width="1697" height="425" alt="image" src="https://github.com/user-attachments/assets/f2a4f932-27c4-4e5d-87f9-d7547e1b89eb" />
 
 
 
 
 
-Seegun lo comprendido del analisis, farmacia ambulatoria posee bastante prevalencia al juntarse las ordenes de estos 2 años y comparar la cantidad de ordenes con las otras areas, siendo frecuentemente el area con mas ordenes. Al observar esta frecuencia, llama la atencion que abril, junio, julio y septiembre juntan una gran cantidad de ordenes. Por lo que se puede suponer de esto, es de que farmacia ambulatoria tiende a realizar pedidos con mayor frecuencia en estos meses.
+Seegun lo comprendido del analisis, farmacia ambulatoria posee bastante prevalencia al juntarse las ordenes de estos 2 años y comparar la cantidad de ordenes con las otras areas, siendo frecuentemente el area con mas ordenes. Al observar esta frecuencia, llama la atencion que abril, junio, julio y septiembre juntan una gran cantidad de ordenes. Por lo que se puede suponer problemas de stock frecuente en estos periodos.
+
 <img width="1447" height="336" alt="image" src="https://github.com/user-attachments/assets/f207c1fc-1427-43f2-a61a-6a7ac032107e" />
 
 Segun la cantidad de ordenes realizadas en el periodo 2024-2025, se observa que el año 2025 el mes con la mayor cantidad de ordenes realizadas en el hospital es abril, liderando con 21 ordenes, 8 de las cuales son de farmacia ambulatoria y 7 provenientes de FALTA CENABAST, se nota que coincidentemente tambien es el mes con el gasto mas alto en medicamentos de estos 2 años, con $19.708.868.
 ### COMPARATIVA 2024-2025
-Es importante entender que el aumento en las metricas de ordenes de farmacia y FALTA CENABAST incrementaron el año 2025, el mas notorio es FARMACIA AMBULATORIA con 27 ordenes el año 2024 a 43 ordenes el 2025, siendo un aumento del 59,2% de las ordenes comparadas al año pasado.
+Es importante entender que el aumento en las metricas de ordenes de farmacia y FALTA CENABAST incrementaron el año 2025, el mas notorio es FARMACIA AMBULATORIA con 27 ordenes el año 2024 a 43 ordenes el 2025, siendo un aumento del 59,2%(YoY).
 
 <img width="1249" height="627" alt="image" src="https://github.com/user-attachments/assets/e6edf708-23ec-4228-8fd3-3e886f1f94b4" />
 
@@ -93,14 +100,14 @@ En total, FALTA CENABAST acumula 21 ordenes totales con esta caracteristica, seg
 <img width="1116" height="623" alt="image" src="https://github.com/user-attachments/assets/221108cd-c6a0-4223-9cf2-df6d115f3cf0" />
 
 ### COMPARATIVA 2024-2025
-Hay algo crucial que destacar, y es que el gasto de compra alternativa es bajo ($9.909.880)comparado con el año siguiente, que asciende a $23.210.177, lo cual indica un crecimiento de 134% a partir del valor original. 
+Hay algo crucial que destacar, y es que el gasto de compra alternativa es bajo ($9.909.880)comparado con el año siguiente, que asciende a $23.210.177, lo cual indica un crecimiento de 134%(YoY) a partir del valor original. 
 El analisis realizado indica una variedad de precios de ordenes mucho mayores dentro de FALTA CENABAST en el 2025 con un promedio de $1.110.390 a comparacion de farmacia ambulatoria con $828.473
 
 <img width="929" height="503" alt="image" src="https://github.com/user-attachments/assets/a5a895a4-3001-4641-bcc9-a5d807d491ed" />
 <img width="918" height="507" alt="image" src="https://github.com/user-attachments/assets/3c7d7f29-a94b-4db8-83d0-71eff27a546e" />
 
-En 2024 la mayor participacion en ordenes es por FALTA CENABAST con 13 ordenes y un gasto total de $4.420.553, siguiendo farmacia ambulatoria con 9 ordenes y $3.605.081. Estas areas equivalen al 80,9% del valor total de compra alternativa.
-Pasando al 2025 ocurre un cambio en el area con mas ordenes, dominando farmacia ambulatoria con 11 ordenes y un gasto de $10.483.591 es de destacar que el aumento del gasto del año pasado al 2025 es de 190%; y cambiando con FALTA CENABAST con 8 ordenes y un gasto de $8.883.124, significando un aumento del 100%. Segun el porcentaje que equivalen estas 2 areas en el total de compra alternativa, tienen una proporcion de 83,4%, significando que la proporcion que contribuye al valor aumentó en un 2,5%.
+En 2024 la mayor cantidad en ordenes es FALTA CENABAST con 13 ordenes y con un gasto total de $4.420.553, siguiendo farmacia ambulatoria con 9 ordenes y $3.605.081. Estas areas equivalen al 80,9% del % de participacion total de gasto de compra alternativa.
+Pasando al 2025 ocurre un cambio en el area con mas ordenes, dominando farmacia ambulatoria con 11 ordenes y un gasto de $10.483.591 es de destacar que el aumento del gasto del año pasado al 2025 es de 190%(YoY); y cambiando con FALTA CENABAST con 8 ordenes y un gasto de $8.883.124, significando un aumento del 100%(YoY). Segun el porcentaje que equivalen estas 2 areas, tienen % de participacion en el gasto total de compra alternativa de un 83,4%, significando que la proporcion que contribuye al valor aumentó en un 2,5%.
 
 El mes con mayor costo del 2024, coincidentemente es el de mayor orden, el cual es agosto, la orden de mayor gasto en agosto es COMPRA ALTERNATIVA FALTA CENABAST JULIO / ATORVASTATINA 40 MG CM	con $664,734.
 
