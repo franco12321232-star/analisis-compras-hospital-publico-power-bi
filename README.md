@@ -40,14 +40,6 @@ Una vez realizada las relaciones se procede a crear las visualizaciones y a proc
 
 <img width="1057" height="645" alt="image" src="https://github.com/user-attachments/assets/777d0665-504a-4470-8741-718f21e2be5d" />
 
-
-
--- PODRIA SEPARAR LOS ANALISIS POR SECCIONES SEGUN MIS PANELES, POR LO QUE VOY A CREAR CATEGORIAS Y VOY A EMPEZAR A COMPARAR Y VER PATRONES, ME INTERESAN VARIAS COMPARATIVAS ENTRE ORDENES TOTALES EN EL AÑO, JUNTO CON PATRONES DE COMPRAS DE STOCK CRITICO EN EL AÑO, COMPRAS ALTERNATIVAS Y FALTA CENABAST, ESO PUEDE REVELAR SI ES QUE LO ESCLAREZCO BIEN, SI HAY UN PATRON EN LA REALIZACION DE LAS ORDENES DE COMPRA JUNTO CON LA DEMANDA Y FALTA DE STOCK, PUEDO JUSTIFICAR SI EL CUMULO DE ESTAS CATEGORIAS AFECTA DE GRAN MEDIDA A LAS ORDENES ANUALES
-Recalcar que las unidades que estan ahi algunas son ampollas y otras son clasificadas como unidad y se cambiaron por ser mismo producto, tambien que se creo una columna de clasificacion de ordenes y se creo una de tipo de orden para identificar todas las de compra agil.
-Aclarar que compra alternativa no es categoria sino condicion y que tambien existe COMPRA ALTERNATIVA FALTA CENABAST. Explicar por que compra alternativa, stock critico y falta cenabast son condiciones. (sirve para separar lo que en realidad quiero saber y buscar dentro de mis areas que yo mismo designe)--
-
-
-
 ## Farmacia Ambulatoria
 
 ### Vista general de los datos
@@ -68,11 +60,6 @@ Al buscar en la tabla con drilldown, aparecen todas las instancias de venta del 
 Se realiza una metrica donde se busca las ordenes con mayor cantidad de productos que se adquieren, usando como condicion que sean arriba de 5000 unidades y que pertenezcan a farmacia ambulatoria, se debe dejar claro que las formas farmaceuticas no se definen y solo se considera la adquisicion de la unidad en si.
 
 <img width="752" height="440" alt="image" src="https://github.com/user-attachments/assets/df606596-42ce-4fb0-aa1c-6125122dbd7b" />
-
-
-
-
-
 
 
 Segun lo comprendido del analisis, farmacia ambulatoria es bastante prevalente en lo que respecta a la frecuencia de ordenes de compra, al observar los datos de estos 2 años y comparar la cantidad de ordenes con las otras areas, se comprueba que es el area que tiene mas ordenes en total, llegando a 70. Al observar esta frecuencia, llama la atencion que abril, junio, julio y septiembre juntan una gran cantidad de ordenes. Por lo que se puede suponer problemas de stock frecuente en estos periodos.
