@@ -1,11 +1,40 @@
- # analisis-compras-hospital-publico-power-bi
+<img width="723" height="685" alt="image" src="https://github.com/user-attachments/assets/dae37fef-bc0b-4e97-99ea-7f377b61226a" /> # analisis-compras-hospital-publico-power-bi
 ## Introduccion
 Se realiza un Analisis en power bi derivado de proyecto analisis de hospital publico, el cual previamente se extrajo de datasets de mercado publico por medio de Rstudio, se limpio y se crearon mediciones en google sheets y tableau. Este proyecto continua con una limpieza mas exaustiva de datos junto con normalizacion de datos y creacion de un modelo de datos que ayuda a crear visualizaciones, formar relaciones y crear tablas que organizen de fomra clara los datos, ademas de preparar el dataset para futuros analisis al incluir codigos de tipo de compra, con la intencion de escalarlo a licitaciones publicas u otros segun necesidad.
-Limpieza y normalizacion de datos 
+
+
+
+## Limpieza y normalizacion de datos 
+Se crea una clasificacion por palabras clave(FARMACIA AMBULATORIA, FALTA CENABAST, FARMACIA DOSIS UNITARIA, COMITÉ FARMACIA, NO CLASIFICADO, ETC), para explorar en detalle como se elaboro el codigo consultar **codigo clasifiacion area.txt**
+
 Es muy posible que FARMACIA DU pueda significar DOSIS UNITARIA, se procede a normalizar en la tabla, conservando la columna original para futuras referencias
 <img width="1178" height="208" alt="image" src="https://github.com/user-attachments/assets/aaab9fb3-2e59-4aa7-b4e3-b15b3ccedb83" />
+
 Dentro del calculo del total de gasto en medicamento dentro de farmacia ambulatoria posee 3 ordenes con nombre de otras areas, COMPRA ALTERNATIVA y FALTA CENABAST, se consideran parte de farmacia ambulatoria si lo dice explicitamente el nombre:
+
 <img width="1416" height="147" alt="image" src="https://github.com/user-attachments/assets/4800edd0-27ef-4986-9e2b-765804d943c5" />
+
+## Creacion del modelo de datos
+Se procede a crear tablas a partir de documento excel **consolidar_para _csv_2024-2025**, se limpian datos nulos (sin valores) y se realizn las limpiezas mencionadas en la categoria *Limpieza y normalizacion de datos*
+<img width="1919" height="1076" alt="image" src="https://github.com/user-attachments/assets/7d04e3dc-72bc-49d8-b943-d3ce69815189" />
+se crea la tabla normalizado para poder crear columnas que normalizen, corrijan errores en textos, se creen codigos para poder formar las tablas necesarias para crear el modelo de datos y asi poder integrar time intelligence para realizar analisis en el periodo a estudiar.
+<img width="1514" height="674" alt="image" src="https://github.com/user-attachments/assets/c7baaced-491f-4be6-a1be-7afeb1e55851" />
+<img width="723" height="685" alt="image" src="https://github.com/user-attachments/assets/9df00420-bb0e-4cbd-8b15-e39254c248cf" />
+Se crean columnas con valores booleanos representados como "SI" o "NO", con el objetivo de clasificar las ordenes de area por estado de compra alternativa, falta cenabast o stock critico. Es de necesidad aclarar que falta cenabast es tanto un atributo de un area como tambien un area, la forma en que se diferenció es por la clasificacion de las areas como se habia mencionado anteriormente, el orden en que se realizó la clasificacion es crucial por el hecho de que un valor como FALTA CENABAST FARMACIA AMBULATORIA es clasificado como FARMACIA AMBULATORIA por la razon de que el comando que lo clasifica como tal está primero en la lista de ejecucion, por lo que todos los que incluyan esa combinacion van a ser considerados FARMACIA AMBULATORIA, todos los que digan FALTA CENABAST sin ningun otro nombre seran considerados como tal, sucediendo lo mismo con stock critico y compra alternativa.
+
+<img width="636" height="715" alt="image" src="https://github.com/user-attachments/assets/46caf5c7-8d93-42cc-b918-2b9f0cee9863" />
+
+Como se vio anteriormente, se crearon tablas que resumen y mantienen codigos y productos unicos, lo que facilita el orden, limpieza, llamada de datos y la trazabilidad de los datos
+
+<img width="349" height="278" alt="image" src="https://github.com/user-attachments/assets/bc2473be-340e-4322-8429-af6a375a622c" />
+
+Luego de creada las tablas se crean las relaciones en estrella en torno a la tabla de hechos, la cual representa a todos los eventos de compra y contiene todos los montos y claves secundarias, esta posee una clave unica de compra para identificar los eventos de adquisicion. Se crea la tabla **tabla** que contiene todas las columnas que nos ayudaran a medir en el tiempo los datos que se van a analizar.
+
+Una vez realizada las relaciones se procede a crear las visualizaciones y a proceder con un analisis mas profundo de los datos
+
+<img width="1057" height="645" alt="image" src="https://github.com/user-attachments/assets/777d0665-504a-4470-8741-718f21e2be5d" />
+
+
 
 -- PODRIA SEPARAR LOS ANALISIS POR SECCIONES SEGUN MIS PANELES, POR LO QUE VOY A CREAR CATEGORIAS Y VOY A EMPEZAR A COMPARAR Y VER PATRONES, ME INTERESAN VARIAS COMPARATIVAS ENTRE ORDENES TOTALES EN EL AÑO, JUNTO CON PATRONES DE COMPRAS DE STOCK CRITICO EN EL AÑO, COMPRAS ALTERNATIVAS Y FALTA CENABAST, ESO PUEDE REVELAR SI ES QUE LO ESCLAREZCO BIEN, SI HAY UN PATRON EN LA REALIZACION DE LAS ORDENES DE COMPRA JUNTO CON LA DEMANDA Y FALTA DE STOCK, PUEDO JUSTIFICAR SI EL CUMULO DE ESTAS CATEGORIAS AFECTA DE GRAN MEDIDA A LAS ORDENES ANUALES
 Recalcar que las unidades que estan ahi algunas son ampollas y otras son clasificadas como unidad y se cambiaron por ser mismo producto, tambien que se creo una columna de clasificacion de ordenes y se creo una de tipo de orden para identificar todas las de compra agil.
@@ -14,6 +43,15 @@ Aclarar que compra alternativa no es categoria sino condicion y que tambien exis
 
 
 ## Farmacia Ambulatoria
+
+### Vista general de los datos
+En general se puede deducir que existe un crecimiento del gasto en las areas de FARMACIA AMBULATORIA y FALTA CENABAST, con variaciones de gasto comparada con el año pasado bastante notorias y un aumento en el porcentaje de participacion en el gasto total, ambos juntos representando al 48,72% del gasto total de estos 2 años.
+
+<img width="1314" height="336" alt="image" src="https://github.com/user-attachments/assets/ea29c950-b341-490c-ba0c-f123293ad2f6" />
+
+
+
+
 
 Seegun lo comprendido del analisis, farmacia ambulatoria posee bastante prevalencia al juntarse las ordenes de estos 2 años y comparar la cantidad de ordenes con las otras areas, siendo frecuentemente el area con mas ordenes. Al observar esta frecuencia, llama la atencion que abril, junio, julio y septiembre juntan una gran cantidad de ordenes. Por lo que se puede suponer de esto, es de que farmacia ambulatoria tiende a realizar pedidos con mayor frecuencia en estos meses.
 <img width="1447" height="336" alt="image" src="https://github.com/user-attachments/assets/f207c1fc-1427-43f2-a61a-6a7ac032107e" />
@@ -81,5 +119,7 @@ El mes con mas gasto en FALTA CENABAST es en agosto y el que tiene mas ordenes e
 
 <img width="586" height="191" alt="image" src="https://github.com/user-attachments/assets/ab0f7196-b516-4edb-ab66-9d3c9964188c" />
 
+## CONCLUSION
 
+Se desprende de esto que el 2025 se incurrio
 
