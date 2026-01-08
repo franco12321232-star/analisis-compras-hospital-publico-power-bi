@@ -1,7 +1,6 @@
-<img width="723" height="685" alt="image" src="https://github.com/user-attachments/assets/dae37fef-bc0b-4e97-99ea-7f377b61226a" /> # analisis-compras-hospital-publico-power-bi
+ # analisis-compras-hospital-publico-power-bi
 ## Introduccion
 Se realiza un Analisis en power bi derivado de proyecto analisis de hospital publico, el cual previamente se extrajo de datasets de mercado publico por medio de Rstudio, se limpio y se crearon mediciones en google sheets y tableau. Este proyecto continua con una limpieza mas exaustiva de datos junto con normalizacion de datos y creacion de un modelo de datos que ayuda a crear visualizaciones, formar relaciones y crear tablas que organizen de fomra clara los datos, ademas de preparar el dataset para futuros analisis al incluir codigos de tipo de compra, con la intencion de escalarlo a licitaciones publicas u otros segun necesidad.
-
 
 
 ## Limpieza y normalizacion de datos 
@@ -16,10 +15,14 @@ Dentro del calculo del total de gasto en medicamento dentro de farmacia ambulato
 
 ## Creacion del modelo de datos
 Se procede a crear tablas a partir de documento excel **consolidar_para _csv_2024-2025**, se limpian datos nulos (sin valores) y se realizn las limpiezas mencionadas en la categoria *Limpieza y normalizacion de datos*
+
 <img width="1919" height="1076" alt="image" src="https://github.com/user-attachments/assets/7d04e3dc-72bc-49d8-b943-d3ce69815189" />
+
 se crea la tabla normalizado para poder crear columnas que normalizen, corrijan errores en textos, se creen codigos para poder formar las tablas necesarias para crear el modelo de datos y asi poder integrar time intelligence para realizar analisis en el periodo a estudiar.
+
 <img width="1514" height="674" alt="image" src="https://github.com/user-attachments/assets/c7baaced-491f-4be6-a1be-7afeb1e55851" />
 <img width="723" height="685" alt="image" src="https://github.com/user-attachments/assets/9df00420-bb0e-4cbd-8b15-e39254c248cf" />
+
 Se crean columnas con valores booleanos representados como "SI" o "NO", con el objetivo de clasificar las ordenes de area por estado de compra alternativa, falta cenabast o stock critico. Es de necesidad aclarar que falta cenabast es tanto un atributo de un area como tambien un area, la forma en que se diferenció es por la clasificacion de las areas como se habia mencionado anteriormente, el orden en que se realizó la clasificacion es crucial por el hecho de que un valor como FALTA CENABAST FARMACIA AMBULATORIA es clasificado como FARMACIA AMBULATORIA por la razon de que el comando que lo clasifica como tal está primero en la lista de ejecucion, por lo que todos los que incluyan esa combinacion van a ser considerados FARMACIA AMBULATORIA, todos los que digan FALTA CENABAST sin ningun otro nombre seran considerados como tal, sucediendo lo mismo con stock critico y compra alternativa.
 
 <img width="636" height="715" alt="image" src="https://github.com/user-attachments/assets/46caf5c7-8d93-42cc-b918-2b9f0cee9863" />
