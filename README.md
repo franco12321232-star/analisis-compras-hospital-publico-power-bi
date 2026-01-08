@@ -2,7 +2,7 @@
 ## Introduccion
 Se realiza un Analisis en power bi derivado de proyecto analisis de hospital publico, el cual previamente se extrajo de datasets de mercado publico por medio de Rstudio, se limpio y se crearon mediciones en google sheets y tableau. Este proyecto continua con una limpieza mas exhaustiva de datos junto con normalizacion y creacion de un modelo de datos que ayuda a crear visualizaciones, formar relaciones y crear tablas que organizen de fomra clara las observaciones, ademas de preparar el dataset para futuros analisis al incluir codigos de tipo de compra, con la intencion de escalarlo a licitaciones publicas u otros segun necesidad.
 
-ALCANCE
+## Añcamce
 Se utiliza un dataset parcialmente limpio que contiene observaciones de 2 años(2024-2025) de actos de ordenes de compra por parte del hospital Dr.Lautaro Navarro.
 No es posible estimar tiempo de recepcion de los medicamentos con los datos proporcionados en el dataset, en las descripciones solo se comentan estimados por parte de los proveedores y no es un dato confiable, ademas de no haber una fecha explicita que refiera recepcion. Solo existen fechas de emision de ordenes de compra y fechas de emision de cotizaciones; tambien se despreciara las cotizaciones y solo se consideraran datos del acto de orden de compra.
 
