@@ -1,0 +1,12 @@
+if Text.Contains([Texto antes del delimitador],"COMITÉ FARMACIA") then "COMITÉ FARMACIA"
+else if Text.Contains([Texto antes del delimitador],"FARMACIA AMBULATORIA") then "FARMACIA AMBULATORIA"
+else if Text.Contains([Texto antes del delimitador],"FARMACIA DOSIS UNITARIA") then "FARMACIA DOSIS UNITARIA"
+else if Text.Contains([Texto antes del delimitador],"FALTA CENABAST") then "FALTA CENABAST"
+else if Text.Contains([Texto antes del delimitador],"CONTROLADOS") then "CONTROLADOS"
+else if Text.Contains([Texto antes del delimitador],"PARTICULAR FARMACIA") then "PARTICULAR FARMACIA"
+else if Text.Contains([Texto antes del delimitador],"ANTISEPTICOS Y DESINFECTANTES") then "ANTISEPTICOS Y DESINFECTANTES"
+else if Text.Contains([Texto antes del delimitador],"SUEROS Y ALCOHOLES") then "SUEROS Y ALCOHOLES"
+else if Text.Contains([Texto antes del delimitador],"FARMACIA DU JULIO") then "FARMACIA DU JULIO"
+else "NO CLASIFICADO"
+SUEROS Y ALCOHOLES
+FARMACIA DU JULIO
