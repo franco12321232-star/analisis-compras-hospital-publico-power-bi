@@ -4,7 +4,7 @@ Se realiza un Analisis en power bi derivado de proyecto analisis de hospital pub
 
 ALCANCE
 Se utiliza un dataset parcialmente limpio que contiene observaciones de 2 años(2024-2025) de actos de ordenes de compra por parte del hospital Dr.Lautaro Navarro.
-Es imposible estimar tiempo de recepcion de los medicamentos, en las descripciones solo se comentan estimados, no sale una fecha acerca de ello, solo existen fechas de elaboracion de ordenes de compra y fechas de elaboracion de cotizaciones; tambien se despreciara las cotizaciones y solo se consideraran datos del acto de orden de compra.
+No es posible estimar tiempo de recepcion de los medicamentos con los datos proporcionados en el dataset, en las descripciones solo se comentan estimados por parte de los proveedores y no es un dato confiable, ademas de no haber una fecha explicita que refiera recepcion. Solo existen fechas de emision de ordenes de compra y fechas de emision de cotizaciones; tambien se despreciara las cotizaciones y solo se consideraran datos del acto de orden de compra.
 
 ## Limpieza y normalizacion de datos 
 Se crea una clasificacion por palabras clave(FARMACIA AMBULATORIA, FALTA CENABAST, FARMACIA DOSIS UNITARIA, COMITÉ FARMACIA, NO CLASIFICADO, ETC), para explorar en detalle como se elaboro el codigo consultar **codigo clasifiacion area.txt**
