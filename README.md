@@ -1,6 +1,7 @@
  # analisis-compras-hospital-publico-power-bi
 ## Introduccion
 Se realiza un Analisis en power bi derivado de proyecto analisis de hospital publico, el cual previamente se extrajo de datasets de mercado publico por medio de Rstudio, se limpio y se crearon mediciones en google sheets y tableau. Este proyecto continua con una limpieza mas exhaustiva de datos junto con normalizacion y creacion de un modelo de datos que ayuda a crear visualizaciones, formar relaciones y crear tablas que organizen de fomra clara las observaciones, ademas de preparar el dataset para futuros analisis al incluir codigos de tipo de compra, con la intencion de escalarlo a licitaciones publicas u otros segun necesidad.
+El analisis se basa en entender de donde proviene el aumento de los gastos, que tanto es el crecimiento de los gastos, cual es la relevancia de FALTA CENABAST y COMPRAS ALTERNATIVAS en los procesos de compra agil y descubrir otras vias de estudio para un proyecto mas profundo.
 
 ## Alcance
 Se utiliza un dataset parcialmente limpio que contiene observaciones de 2 años(2024-2025) de actos de ordenes de compra por parte del hospital Dr.Lautaro Navarro.
@@ -41,6 +42,22 @@ Luego de creada las tablas se crean las relaciones en estrella en torno a la tab
 Una vez realizada las relaciones se procede a crear las visualizaciones y a proceder con un analisis mas profundo de los datos
 
 <img width="1057" height="645" alt="image" src="https://github.com/user-attachments/assets/777d0665-504a-4470-8741-718f21e2be5d" />
+
+## Vista General
+Como introduccion al analisis, se presenta una vista general de todas las compras agiles ordenadas por tipo de orden.
+<img width="1129" height="579" alt="image" src="https://github.com/user-attachments/assets/492a8322-374c-4d76-b0e6-bd0753ea8683" />
+
+Donde existe un incremento notorio en las 3 areas principales a analizar:
+### Comparacion 2024-2025
+
+<img width="562" height="262" alt="image" src="https://github.com/user-attachments/assets/ed506e9b-b4af-480f-9b8d-aa2da129b0aa" />
+
+Se muestra el salto fuerte en el coste del area falta cenabast y el liderazgo que mantiene farmacia ambulatoria en el año 2025:
+
+<img width="533" height="253" alt="image" src="https://github.com/user-attachments/assets/b6e1e359-4912-4627-8b40-e7db859c4b75" />
+
+
+
 
 ## Farmacia Ambulatoria
 
@@ -155,12 +172,24 @@ Se observa un aumento fuerte al igual que la comparativa del aumento del gasto t
 El gasto en toda las ordenes con el atributo FALTA CENABAST llega a $8.156.588 el 2024, subiendo en un 237% a un total de %27.488.427, se nota ademas que el aumento de ordenes no es tan prominente, con solo un aumento de 5 ordenes en el 2025.
 
 <img width="768" height="493" alt="image" src="https://github.com/user-attachments/assets/11688124-9f0c-45dc-b0b9-16f925d1435f" />
-El mes con mas ordenes
 
-<img width="531" height="455" alt="image" src="https://github.com/user-attachments/assets/9f8558ee-bc6e-4798-8a90-699cc939551d" />
+El mes con mas ordenes recae en el mes de agosto de 2024 y el mes de abril del 2025, ambos con 7 ordenes.
+
+<img width="357" height="151" alt="image" src="https://github.com/user-attachments/assets/a26dadd7-7fd2-4fda-a3cc-c5545aee8d14" />
+
+El mes con mas gastos en el 2024 es junio con $2.041.452 y el 2025 recae en el mismo mes de abril con $5.658.269
+
+<img width="357" height="236" alt="image" src="https://github.com/user-attachments/assets/4fbc8c32-7a0b-4214-9d44-af9e9a755ce1" />
+
+
+
+/>
 
 ## CONCLUSION
 
-Se desprende de esto que el 2025 se incurrio en gastos mayores en areas como FARMACIA AMBULATORIA, CENABAST y COMPRA ALTERNATIVA, mostrando aumentos en la cantidad de ordenes realizadas como en montos gastados de manera proporcional en forma general, demostrando una mayor dependencia de las compras agiles para suplir envios faltantes a farmacia, se hace notar que los periodos donde hay mas ordenes concentradas de farmacia ambulatoria son a mitades de año, e incluso el aumento de ordenes de forma anormal por parte de COMPRA ALTERNATIVA FALTA CENABAST el mes de agosto 2024 puede traducirse en quiebres fuertes que podria ser importante explorar por presencia de de otros periodos donde se repita el mismo patron, ademas de ahondar en proveedores que usualmente participan en suplir al hospital en caso de quiebres, con el proposito de reducir dependencia de un proveedor. Existe una presencia alta de ordenes CENABAST que mayormente se encuentran en abril, junio y agosto   lo que puede significar problemas en lo que respecta a prevision frente a la disponibilidad y rapidez de respuesta de parte de CENABAST en esos meses, por lo que puede ser que posiblemente existan problemas de logistica relacionados con CENABAST, y seria una opcion investigar con datasets de CENABAST para diagnosticar problemas en distribucion y tiempo de demora.
+Se desprende de esto que el 2025 se incurrio en gastos mayores en areas como FARMACIA AMBULATORIA, CENABAST y COMPRA ALTERNATIVA, mostrando aumentos en la cantidad de ordenes realizadas como en montos gastados de manera proporcional en forma general, demostrando una mayor dependencia de las compras agiles para suplir envios faltantes a farmacia, se hace notar que los periodos donde hay mas ordenes concentradas de farmacia ambulatoria son a mitades de año, e incluso el aumento de ordenes de forma anormal por parte de COMPRA ALTERNATIVA FALTA CENABAST el mes de agosto 2024 puede traducirse en quiebres fuertes que podria ser importante explorar por presencia de de otros periodos donde se repita el mismo patron.
+Segun lo explorado en los atributos de compras alternativas y falta cenabast, que presentan aumentos en gastos con poco aumento en el numero de ordenes en el año 2025, muestran un alza proporcional al aumento de gasto total de todas las compras agiles, se añade tambien farmacia ambulatoria con un notorio aumento de ordenes de un 27 a un 43, lo cual equivale a un 59,2% de aumento, o sea, aumento en la mitad de las ordenes del año 2024. Por lo que se da a entender
+que estas 3 areas son las que incurrieron en mayores gastos.
+ademas de ahondar en proveedores que usualmente participan en suplir al hospital en caso de quiebres, con el proposito de reducir dependencia de un proveedor. Existe una presencia alta de ordenes CENABAST que mayormente se encuentran en abril, junio y agosto   lo que puede significar problemas en lo que respecta a prevision frente a la disponibilidad y rapidez de respuesta de parte de CENABAST en esos meses, por lo que puede ser que posiblemente existan problemas de logistica relacionados con CENABAST, y seria una opcion investigar con datasets de CENABAST para diagnosticar problemas en distribucion y tiempo de demora.
 
 
