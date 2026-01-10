@@ -47,12 +47,12 @@ Una vez realizada las relaciones se procede a crear las visualizaciones y a proc
 Como introduccion al analisis, se presenta una vista general de todas las compras agiles ordenadas por tipo de orden.
 <img width="1129" height="579" alt="image" src="https://github.com/user-attachments/assets/492a8322-374c-4d76-b0e6-bd0753ea8683" />
 
-Donde existe un incremento notorio en las 3 areas principales a analizar:
+Donde existe un incremento notorio en gastos en las 3 areas principales a analizar:
 ### Comparacion 2024-2025
 
 <img width="562" height="262" alt="image" src="https://github.com/user-attachments/assets/ed506e9b-b4af-480f-9b8d-aa2da129b0aa" />
 
-Se muestra el salto fuerte en el coste del area falta cenabast y el liderazgo que mantiene farmacia ambulatoria en el año 2025:
+Se muestra el salto fuerte en el coste del area falta cenabast y el liderazgo que mantiene farmacia ambulatoria en el año 2025, ademas del aumento en comite de farmacia y farmacia unitaria.:
 
 <img width="533" height="253" alt="image" src="https://github.com/user-attachments/assets/b6e1e359-4912-4627-8b40-e7db859c4b75" />
 
@@ -81,7 +81,7 @@ Se realiza una metrica donde se busca las ordenes con mayor cantidad de producto
 <img width="752" height="440" alt="image" src="https://github.com/user-attachments/assets/df606596-42ce-4fb0-aa1c-6125122dbd7b" />
 
 
-Segun lo comprendido del analisis, farmacia ambulatoria es bastante prevalente en lo que respecta a la frecuencia de ordenes de compra, al observar los datos de estos 2 años y comparar la cantidad de ordenes con las otras areas, se comprueba que es el area que tiene mas ordenes en total, llegando a 70. Al observar esta frecuencia, llama la atencion que abril, junio, julio y septiembre juntan una gran cantidad de ordenes.-
+Segun lo comprendido del analisis a continuacion, farmacia ambulatoria es bastante prevalente en lo que respecta a la frecuencia de ordenes de compra considerando todas los tipos de ordenes de compra. Al observar los datos de estos 2 años y comparar la cantidad de ordenes con las otras areas, se comprueba que es el area que tiene mas ordenes en total, llegando a 70. Al observar esta frecuencia, llama la atencion que abril, junio, julio y septiembre juntan una gran cantidad de ordenes.-
 
 <img width="1447" height="336" alt="image" src="https://github.com/user-attachments/assets/f207c1fc-1427-43f2-a61a-6a7ac032107e" />
 
@@ -163,7 +163,7 @@ Solo 3 ordenes poseen en su nombre incluido FARMACIA AMBULATORIA
 
 <img width="334" height="160" alt="image" src="https://github.com/user-attachments/assets/8537e1a3-6896-4275-b397-58eaf53659e5" />
 
-El resto es clasificado de forma pura como FALTA CENABAST
+El resto es FALTA CENABAST
 
 Se observa un aumento fuerte al igual que la comparativa del aumento del gasto total en compras alternativas.
 
@@ -187,10 +187,10 @@ El mes con mas gastos en el 2024 es junio con $2.041.452 y el 2025 recae en el m
 
 ## CONCLUSION
 
-Se desprende de esto que el 2025 se incurrio en gastos mayores en areas como FARMACIA AMBULATORIA, CENABAST y COMPRA ALTERNATIVA, mostrando aumentos en la cantidad de ordenes realizadas como en montos gastados de manera proporcional en forma general, demostrando una mayor dependencia de las compras agiles para suplir envios faltantes a farmacia, se hace notar que los periodos donde hay mas ordenes concentradas de farmacia ambulatoria son a mitades de año, e incluso el aumento de ordenes de forma anormal por parte de COMPRA ALTERNATIVA FALTA CENABAST el mes de agosto 2024 puede traducirse en quiebres fuertes que podria ser importante explorar por presencia de de otros periodos donde se repita el mismo patron.
+Se desprende de esto que el 2025 se incurrio en gastos mayores en areas como FARMACIA AMBULATORIA, CENABAST y COMPRA ALTERNATIVA, mostrando aumentos en la cantidad de ordenes realizadas como en montos gastados de manera proporcional y en forma general, demostrando una mayor dependencia de las compras agiles para suplir envios faltantes a farmacia, se hace notar que los periodos donde hay mas ordenes concentradas de farmacia ambulatoria son a mitades de año, e incluso el aumento de ordenes de forma anormal por parte de COMPRA ALTERNATIVA FALTA CENABAST el mes de agosto 2024 puede traducirse en quiebres fuertes que podria ser importante explorar por presencia de de otros periodos donde se repita el mismo patron.
 Segun lo explorado en los atributos de compras alternativas y falta cenabast, que presentan aumentos en gastos con poco aumento en el numero de ordenes en el año 2025, muestran un alza proporcional al aumento de gasto total de todas las compras agiles, se añade tambien farmacia ambulatoria con un notorio aumento de ordenes de un 27 a un 43, lo cual equivale a un 59,2% de aumento, o sea, aumento en la mitad de las ordenes del año 2024. Por lo que se da a entender
 que estas 3 areas son las que incurrieron en mayores gastos.
-Es importante destacar el fuerte aumento de gastos en COMPRAS ALTERNATIVAS entre FALTA CEBABAST y FARMACIA AMBULATORIA, las cuales indican un gasto fuerte por presion de falta de stock por parte de proveedores y CENABAST.
+Es importante destacar el fuerte aumento de gastos en COMPRAS ALTERNATIVAS entre FALTA CENABAST y FARMACIA AMBULATORIA, las cuales indican un gasto fuerte por presion de falta de stock por parte de proveedores y CENABAST.
 ademas de ahondar en proveedores que usualmente participan en suplir al hospital en caso de quiebres, con el proposito de reducir dependencia de un proveedor. Existe una presencia alta de ordenes CENABAST que mayormente se encuentran en abril, junio y agosto   lo que puede significar problemas en lo que respecta a prevision frente a la disponibilidad y rapidez de respuesta de parte de CENABAST en esos meses, por lo que puede ser que posiblemente existan problemas de logistica relacionados con CENABAST, y seria una opcion investigar con datasets de CENABAST para diagnosticar problemas en distribucion y tiempo de demora.
 Se recalca la presencia de altas ordenes en el segundo y tercer cuarto del año, por lo que se deberia colocar especial atencion a los flujos de medicamento y la confianza con los proveedores en estas epocas, donde es necesario realizar consultas sobre estado de stock previo a pedido de ordenes de compra, en lo posible se deberia determinar el periodo a contactarse con proveedor, lo cual se deberia determinar basado en la fecha de cotizacion y la fecha de ordenes, lo cual se abordara en el siguiente estudio, en donde se realizaran analisis de diferencias de dias respecto a la cotizacion y la emision de la orden de compra, lo que esclareceria bastante sobre el proceso administrativo y demoras de la orden de compra.
 
