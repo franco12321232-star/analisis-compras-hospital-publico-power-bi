@@ -1,7 +1,7 @@
  # analisis-compras-hospital-publico-power-bi
 ## Introduccion
 Se realiza un Analisis en power bi derivado de proyecto analisis de hospital publico, el cual previamente se extrajo de datasets de mercado publico por medio de Rstudio, se limpio y se crearon mediciones en google sheets y tableau. Este proyecto continua con una limpieza mas exhaustiva de datos junto con normalizacion y creacion de un modelo de datos que ayuda a crear visualizaciones, formar relaciones y crear tablas que organizen de fomra clara las observaciones, ademas de preparar el dataset para futuros analisis al incluir codigos de tipo de compra, con la intencion de escalarlo a licitaciones publicas u otros segun necesidad.
-El analisis se basa en entender de donde proviene el aumento de los gastos, que tanto es el crecimiento de los gastos, cual es la relevancia de FALTA CENABAST y COMPRAS ALTERNATIVAS en los procesos de compra agil, cual es el estado respecto a las adquisiciones en farmacia y descubrir otras vias de estudio para un proyecto mas profundo.
+El analisis se basa en entender de donde proviene el aumento de los gastos, que tanto es el crecimiento de los gastos, cual es la relevancia de FALTA CENABAST y COMPRAS ALTERNATIVAS en los procesos de compra agil, cual es el estado respecto a las adquisiciones en farmacia ambulatoria y su participacion respecto a los gastos en compra agil y descubrir otras vias de estudio para un proyecto mas profundo.
 
 ## Alcance
 Se utiliza un dataset parcialmente limpio que contiene observaciones de 2 años(2024-2025) de actos de ordenes de compra por parte del hospital Dr.Lautaro Navarro.
